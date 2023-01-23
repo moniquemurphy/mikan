@@ -22,7 +22,7 @@ One of the most helpful Japanese courses I ever took forced us to memorize a bun
 5. To run the script with a frequency or rank threshold (example: only gloss words that are less frequent than the top 1000 words), add a `--rank_threshold` or `--frequency_threshold` argument. (Example: `python flashcards.py --text <path-to-text.txt> --dictionary_path <path-to-dictionary> --jmdict --rank_threshold 1000`)
 
 ## Notes
-* JMDict is recommended because it is freely available. If you have a local EDICT file you would rather use, you can see `build_dict` in `dictionary.py` for an example using a folder with multiple json files from the Kenkyuusha J-E dictionary.
+* JMDict is recommended because it is freely available. If you have local files you would rather use, you can see `build_dict` in `dictionary.py` for an example using a folder with multiple json files from a JSONified EPWING file (https://github.com/FooSoft/zero-epwing).
 * Kana/readings are not included because it was too much of a pain, tbh, but if you use something like [Japanese Input](https://ankiweb.net/shared/info/3918629684) for Anki, you can zoom through adding furigana to cards.
 * This is an imperfect tool, and merely a jumping-off point for learning. It's highly recommended you read through your text and look up any words that seem odd on your own.
 * It's not the fastest thing in the world. This is a little side project I made for myself, and I haven't done much in the way of refactoring or optimization. If you're a python whiz and you'd like to PR to clean anything up, contributions are welcome!
